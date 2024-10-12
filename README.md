@@ -1,11 +1,7 @@
 # ProyectoDSII
-Data Science II: Machine Learning para la Ciencia de Datos
-
-
-# ProyectoDS
 
 Data Science II: Machine Learning para la Ciencia de Datos
-Comisión 61175
+Comisión: 61175
 Alumno: Diego Lopez Castan
 
 
