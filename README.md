@@ -4,63 +4,79 @@ Data Science II: Machine Learning para la Ciencia de Datos
 
 # ProyectoDS
 
-Curso: Data Science I: Fundamentos para la Ciencia de Datos
-Comisión 61170
+Data Science II: Machine Learning para la Ciencia de Datos
+Comisión 61175
 Alumno: Diego Lopez Castan
 
 
 # Abstract
 
-Este conjunto de datos contiene información detallada sobre canciones en Spotify, abarcando tanto aspectos de su popularidad como características acústicas. Cada registro incluye datos como el nombre y el artista de la canción, la popularidad de la pista, y su álbum asociado. Además, proporciona información sobre las listas de reproducción en las que se incluyen las canciones, junto con su género y subgénero.
+Este conjunto de datos contiene información detallada sobre libros en el site goodreads.com. Cada registro incluye datos como el nombre el libro y el autor, el precio, las opiniones y algunos datos más.
+
+
+# Objetivo
+
+**Analizar las relaciones entre el rating de un libro y sus géneros:**
+Identificar si ciertos géneros están asociados con mejores ratings en general.
+
+**Estudio de popularidad por series literarias:** Evaluar el impacto de pertenecer a una serie en el éxito de los libros (por ejemplo, comparar el rating de los libros de una serie con otros libros del mismo autor que no pertenecen a una serie).
+
+**Segmentación por idioma y género:** Estudiar la distribución de géneros según los diferentes idiomas de los libros y su relación con los ratings.
+
+**Relación entre la longitud del título y el éxito de un libro:** Investigar si los libros con títulos más cortos o más largos tienen alguna ventaja en términos de popularidad (rating).
+
+**Estudio de la relación entre el número de géneros y el rating de un libro:** Analizar si los libros que pertenecen a un genero específico recibe mejor rating.
 
 
 # Campos del dataset
 
-**track_id**: Identificador único de la canción en Spotify.
+**title:** El título del libro. (Cadena de texto)
 
-**track_name:** Nombre de la canción.
+**series:** La serie a la que pertenece el libro, si es que pertenece a alguna. (Cadena de texto)
 
-**track_artist:** Artista de la canción.
+**author:** El autor del libro. (Cadena de texto)
 
-**track_popularity:** Puntaje de popularidad de la canción en Spotify (de 0 a 100, donde 100 es la mayor popularidad).
+**rating:** La calificación promedio del libro en GoodReads. (Flotante)
 
-**track_album_id:** Identificador único del álbum en el que se encuentra la canción.
+**description:** Una breve descripción del libro. (Cadena de texto)
 
-**track_album_name:** Nombre del álbum.
+**language:** El idioma en el que está escrito el libro. (Cadena de texto)
 
-**track_album_release_date:** Fecha de lanzamiento del álbum.
+**isbn:** El número ISBN del libro. (Cadena de texto)
 
-**playlist_name:** Nombre de la lista de reproducción en la que se encuentra la canción.
+**genres:** Los géneros en los que se clasifica el libro. (Cadena de texto)
 
-**playlist_id:** Identificador único de la lista de reproducción.
+**characters:** Los personajes que aparecen en el libro. (Cadena de texto)
 
-**playlist_genre:** Género musical de la lista de reproducción.
+**bookFormat:** El formato del libro (por ejemplo, tapa blanda o libro electrónico). (Cadena de texto)
 
-**playlist_subgenre:** Subgénero musical de la lista de reproducción.
+**edition:** La edición del libro. (Cadena de texto)
 
-**danceability:** La bailabilidad describe lo adecuada que es una pista para bailar basándose en una combinación de elementos musicales como el tempo, la estabilidad del ritmo, la fuerza del compás y la regularidad general. Un valor de 0,0 es el menos bailable y 1,0 el más bailable.
+**pages:** El número de páginas del libro. (Entero)
 
-**energy:** La energía es una medida de 0,0 a 1,0 y representa una medida perceptiva de intensidad y actividad. Normalmente, las pistas energéticas son rápidas, ruidosas y ruidosas. Por ejemplo, el death metal tiene mucha energía, mientras que un preludio de Bach tiene una puntuación baja en la escala. Las características perceptivas que contribuyen a este atributo incluyen el rango dinámico, el volumen percibido, el timbre, la velocidad de inicio y la entropía general.
+**publisher:** El editor del libro. (Cadena de texto)
 
-**key:** La tonalidad global estimada de la pista. Los números enteros se asignan a tonos utilizando la notación estándar Pitch Class. Por ejemplo, 0 = C, 1 = C♯/D♭, 2 = D, y así sucesivamente. Si no se detecta ninguna tonalidad, el valor es -1.
+**publishDate:** La fecha en la que el libro fue publicado. (Fecha)
 
-**loudness:** La sonoridad general de una pista en decibelios (dB). Los valores de sonoridad se promedian en toda la pista y son útiles para comparar la sonoridad relativa de las pistas. La sonoridad es la cualidad de un sonido que es el principal correlato psicológico de la fuerza física (amplitud). Los valores suelen oscilar entre -60 y 0 db.
+**firstPublishDate:** La fecha en la que el libro fue publicado por primera vez. (Fecha)
 
-**mode:** El modo indica la modalidad (mayor o menor) de una pista, el tipo de escala del que se deriva su contenido melódico. Mayor se representa con 1 y menor con 0.
+**awards:** Cualquier premio que el libro haya recibido. (Cadena de texto)
 
-**speechiness:** La locuacidad detecta la presencia de palabras habladas en una pista. Cuanto más exclusivamente hablada sea la grabación (por ejemplo, programa de entrevistas, audiolibro, poesía), más se acercará a 1,0 el valor del atributo. Los valores superiores a 0,66 describen pistas que probablemente estén compuestas en su totalidad por palabras habladas. Los valores entre 0,33 y 0,66 describen pistas que pueden contener tanto música como voz, ya sea en secciones o en capas, incluyendo casos como la música rap. Los valores por debajo de 0,33 representan probablemente música y otras pistas no habladas.
+**numRatings:** El número de calificaciones que ha recibido el libro. (Entero)
 
-**acousticness:** Una medida de confianza de 0,0 a 1,0 para determinar si la pista es acústica. 1,0 representa una confianza alta en que la pista es acústica.
+**ratingsByStars:** Las calificaciones del libro desglosadas por número de estrellas. (Cadena de texto)
 
-**instrumentalness:** Predice si una pista no contiene voces. Los sonidos «ooh» y «aah» se consideran instrumentales en este contexto. Las pistas de rap o spoken word son claramente «vocales». Cuanto más se acerque el valor de instrumental a 1,0, mayor será la probabilidad de que la pista no contenga voces. Los valores superiores a 0,5 representan pistas instrumentales, pero la confianza es mayor a medida que el valor se acerca a 1,0.
+**likedPercent:** El porcentaje de lectores a los que les gustó el libro. (Flotante)
 
-**liveness:** Detecta la presencia de público en la grabación. Los valores más altos representan una mayor probabilidad de que la pista se haya interpretado en directo. Un valor superior a 0,8 proporciona una gran probabilidad de que la pista sea en directo.
+**setting:** El escenario en el que se desarrolla el libro. (Cadena de texto)
 
-**valence:** Medida de 0,0 a 1,0 que describe la positividad musical que transmite una pista. Las pistas con valencia alta suenan más positivas (por ejemplo, felices, alegres, eufóricas), mientras que las pistas con valencia baja suenan más negativas (por ejemplo, tristes, deprimidas, enfadadas).
+**coverImg:** La imagen de portada del libro. (Cadena de texto)
 
-**tempo:** El tempo global estimado de una pista en pulsaciones por minuto (BPM). En terminología musical, el tempo es la velocidad o ritmo de una pieza determinada y se deriva directamente de la duración media de los tiempos.
+**bbeScore** La puntuación del libro en la lista de los mejores libros de GoodReads. (Flotante)
 
-**duration_ms:** Duración de la canción en milisegundos.
+**bbeVotes:** El número de votos emitidos para el libro en la lista de los mejores libros de GoodReads. (Entero)
+
+**price:** El precio del libro. (Flotante)
 
 # Link del dataset
-[https://www.kaggle.com/datasets/zeesolver/consumer-behavior-and-shopping-habits-dataset/data](https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs/data)
+[[https://www.kaggle.com/datasets/zeesolver/consumer-behavior-and-shopping-habits-dataset/data](https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs/data)](https://www.kaggle.com/datasets/thedevastator/comprehensive-overview-of-52478-goodreads-best-b)
