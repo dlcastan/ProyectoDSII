@@ -77,4 +77,4 @@ Identificar si ciertos géneros están asociados con mejores ratings en general.
 **price:** El precio del libro. (Flotante)
 
 # Link del dataset
-[[https://www.kaggle.com/datasets/zeesolver/consumer-behavior-and-shopping-habits-dataset/data](https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs/data)](https://www.kaggle.com/datasets/thedevastator/comprehensive-overview-of-52478-goodreads-best-b)
+https://www.kaggle.com/datasets/thedevastator/comprehensive-overview-of-52478-goodreads-best-b
