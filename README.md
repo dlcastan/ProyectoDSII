@@ -79,6 +79,8 @@ Identificar si ciertos géneros están asociados con mejores ratings en general.
 # Link del dataset
 https://www.kaggle.com/datasets/thedevastator/comprehensive-overview-of-52478-goodreads-best-b
 
+
+
 # Programas creados con Streamlit
 
 He creado tres programas que se pueden correr en Streamlit, los he creados con el algoritmo **LinearRegression** ya que el mejor algoritmo que he encontrado para predecir el LGBMRegressor no funciona correctamente con esta aplicación. Los programas creados son tres:
@@ -98,7 +100,7 @@ pip install scikit-learn
 ## Clonar el repositorio
 Generar modelos 
 ```console
-git clone [https://github.com/dlcastan/DataScience.git](https://github.com/dlcastan/ProyectoDSII.git)
+git clone https://github.com/dlcastan/DataScience.git
 ```
 
 
