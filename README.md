@@ -86,7 +86,9 @@ https://www.kaggle.com/datasets/thedevastator/comprehensive-overview-of-52478-go
 He creado tres programas que se pueden correr en Streamlit, los he creados con el algoritmo **LinearRegression** ya que el mejor algoritmo que he encontrado para predecir el LGBMRegressor no funciona correctamente con esta aplicación. Los programas creados son tres:
 
 **app_prediccion_precios.py:** Predictor de precio.
+
 **app_prediccion_rating.py:** Predictor de rating.
+
 **app_recomendador.py:** Recomendador de otros títulos de libros.
 
 
