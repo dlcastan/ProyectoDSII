@@ -78,3 +78,44 @@ Identificar si ciertos géneros están asociados con mejores ratings en general.
 
 # Link del dataset
 https://www.kaggle.com/datasets/thedevastator/comprehensive-overview-of-52478-goodreads-best-b
+
+# Programas creados con Streamlit
+
+He creado tres programas que se pueden correr en Streamlit, los he creados con el algoritmo **LinearRegression** ya que el mejor algoritmo que he encontrado para predecir el LGBMRegressor no funciona correctamente con esta aplicación. Los programas creados son tres:
+
+**app_prediccion_precios.py:** Predictor de precio.
+**app_prediccion_rating.py:** Predictor de rating.
+**app_recomendador.py:** Recomendador de otros títulos de libros.
+
+
+## Instalación
+Dependencias que tenes que tener:
+```console
+pip install streamlit
+pip install scikit-learn
+```
+
+## Clonar el repositorio
+Generar modelos 
+```console
+git clone [https://github.com/dlcastan/DataScience.git](https://github.com/dlcastan/ProyectoDSII.git)
+```
+
+
+## Correr App
+Correr app para predecir precio
+```console
+streamlit run pp_prediccion_precios.py
+```
+
+Correr app para predecir rating
+```console
+streamlit run app_prediccion_rating.py
+```
+
+Correr app para recomendar otros títulos de libros
+```console
+streamlit run app_recomendador.py
+```
+
+
