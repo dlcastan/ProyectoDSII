@@ -79,6 +79,14 @@ Identificar si ciertos géneros están asociados con mejores ratings en general.
 # Link del dataset
 https://www.kaggle.com/datasets/thedevastator/comprehensive-overview-of-52478-goodreads-best-b
 
+## **Archivos**
+
+
+Genero dos archivos para podes correr las aplicaciones creadas con Gradio y las aplicaciones creadas con Streamlit. Los mismos son:
+
+**data_model.csv:** en este archivo se encuentran todos los datos numéricos necesarios para correr los modelos.
+
+**data_model_recomendador.csv:** en este archivo están los títulos y géneros de los libros.
 
 
 # Programas creados con Streamlit
